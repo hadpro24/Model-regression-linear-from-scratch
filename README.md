@@ -4,7 +4,7 @@ Implement model regression linear simple and multiple form scratch and compare i
 
 # Contexts
 
-    L'idee de ce projet est d'aide les gens qui veulent en savoir plus sur les maths (et les algorithms) qui sont caches derriere outils de machine learning.
+    L'idee de ce projet est d'aide les gens qui veulent en savoir plus sur les maths (et les algorithms) qui se cachent derriere la regression linear.
     Permettre de comprendre un peu plus en profondeur la therorie derriere le machie learning.
     Dans ce jupyter nous allons commencer avec la Regression Linear, un algorithme beaucoup plus simple.
 
@@ -26,8 +26,8 @@ $$a , b$$
 
     Explication : supposons que notre model predit une valeur de y=600 alors qu'il devrait predire 550 ?
     On dit alors que notre model a fait une erreur de -50 (550-600) on peut donc parfois obtenir des erreurs negatives, pour palier a ce probleme... on a deux solutions :
-        Soit on prens la valeurs absolue de l'erreur : |550-600|=50 (Celui est la procedure avec mean absolute error)
-        Soit on prends la racine carree du resultat soit (-50)**2 = 2500 (on a donc une erreur trop grand il faut donc le penaliser) mais avant on applique cela a tous notre dataset ainsi on la somme precedente.
+        Soit on prend la valeurs absolue de l'erreur : |550-600|=50 (Celui est la procedure avec mean absolute error)
+        Soit on prend la racine carree du resultat soit (-50)**2 = 2500 (on a donc une erreur trop grande il faut donc le penaliser) mais avant on applique cela a tout notre dataset ainsi on la somme precedente.
 
     la representation de cette fonction est convexe (une fonction qui a un seul minima possible)
 
@@ -41,9 +41,9 @@ $$a , b$$
 
 ![title](grd-desc-1-768x460.jpg)
 
-    A savoir : Tout ce qu'on fait en realite, c'est de derive la fonction et calculer le nouveau parameters en retranchant a chaque fois l'encienne valeur et comme la decente de gratient a un seul mina possible (une fonction convexe)... apres plus repetition on va donc tomber sur le minima.
-    Mais attention, vous remarquez qu'on multiplie par le learning reate apres avoir calucle la somme des erreurs, cette valeur est important... il faut savoir le choisir, en generale cette valeur est tres faible et varie entre 0.001 a 0.1.
-    Si cette valeur est trop grand on risque de ne pas tomber sur le minima... on ferra des sauts sans jamais tomber decus, par contre si cette valeur est tres petite on risque de mettre bcp de temps avant d'y arriver on aura donc besoin de beaucoup d'iteration.
+    A savoir : Tout ce qu'on fait en realite, c'est de derive la fonction et calculer le nouveau parameter en retranchant a chaque fois l'encienne valeur et comme la decente de gratient a un seul mina possible (une fonction convexe)... apres plus iteration on va donc tomber sur le minima (ou en tout etre proche).
+    Mais attention, vous remarquez qu'on multiplie par le learning rate apres avoir calucle la somme des erreurs, cette valeur est importante... il faut savoir la choisir, en generale cette valeur est tres faible et varie entre 0.001 a 0.1.
+    Si cette valeur est trop grande on risque de ne pas tomber sur le minima... on ferra des sauts sans jamais tomber decus, par contre si cette valeur est tres petite on risque de mettre bcp de temps avant d'y arriver on aura donc besoin de beaucoup d'iteration.
     
     
 
@@ -625,7 +625,7 @@ print('Score sklearn SGDRegressor : ', sg.score(x1_test, y1_test))
 
 # Piste d'amelioration
 
-    - Ameliorer ce model pour prendre en compte la regression non-linear (avec l'algorithme de regression stockat).
+    - Ameliorer ce model pour prendre en compte la regression non-linear.
     - Jouer sur le learning rate ou le max_inter lorsque le model under-fit.
-    - Ajouter un peu plus de performance sur modele, notament permettre de normalizer les donnes avant de faire le fit.
+    - Ajouter un peu plus de performance sur modele, notament permettre de normalizer les donnees avant de faire le fit.
 
