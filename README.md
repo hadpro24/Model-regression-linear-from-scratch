@@ -629,4 +629,5 @@ print('Score sklearn SGDRegressor : ', sg.score(x1_test, y1_test))
     - Jouer sur le learning rate ou le max_inter lorsque le model under-fit.
     - Ajouter un peu plus de performance sur modele, notament permettre de normalizer les donnees avant de faire le fit.
 
-#Credit : Harouna Diallo(https://harouna.crd.co/)
+#Credit : 
+[Harouna Diallo](https://harouna.crd.co/)
