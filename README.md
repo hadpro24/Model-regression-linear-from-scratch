@@ -31,7 +31,7 @@ Implement model regression linear simple and multiple form scratch and compare i
 
 ![title](5141ef4a2c46eeb5f611f3454eda810c.gif)
 
-    Cette fonction est donc un algorithm iterative, il faut applique des derives partielles et avance celle une certain valeur (c'est ce qu'on appelle taux d'apprentissage ou encore learning rate). 
+    Cette fonction est donc un algorithm iterative, il faut applique des derives partielles et multiplier par une certain valeur (c'est ce qu'on appelle taux d'apprentissage ou encore learning rate). 
 
 ![SegmentLocal](gradient-descent.gif "segment")
 
