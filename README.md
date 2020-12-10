@@ -11,11 +11,11 @@ Implement model regression linear simple and multiple form scratch and compare i
 # Explications
 
     La regression linear est etablie par une equation : 
-$$ y = a*X + b $$
+``` y = a*X + b ``
 
 
     L'objectif du model sera de trouver les bons parameters pour : 
-$$a , b$$
+```a , b```
 
 
     
