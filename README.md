@@ -48,7 +48,8 @@ Implement model regression linear simple and multiple form scratch and compare i
     Si vous avez encore des doutes ou que vous n'avez pas tout compris : Je vous recomande de suivre cette 
     video youtube qui l'explique bien avant de continuer sur le code : 
    [Gradient decente Thibault Neveu](https://www.youtube.com/watch?v=JGgT7L7wKQM)
-   ou encore sur wiki [https://fr.wikipedia.org/wiki/Algorithme_du_gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient)
+   ou encore sur wiki [https://fr.wikipedia.org/wiki/Algorithme_du_gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient) 
+   / Guillaume (Machine Learnia)
 
 # Import tools
 
